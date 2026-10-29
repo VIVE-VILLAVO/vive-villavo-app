@@ -1,0 +1,10 @@
+{
+  "name": "Vive Villavo",
+  "short_name": "Vive Villavo",
+  "description": "Agenda local y guía para descubrir Villavicencio.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f6f0",
+  "theme_color": "#102b27",
+  "icons": []
+}
