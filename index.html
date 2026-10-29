@@ -14,7 +14,245 @@
 @media(max-width:390px){.grid{grid-template-columns:1fr}.art{height:100px}.search button{padding:12px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}}
 </style>
 </head>
+<body><!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102b27">
+<meta name="description" content="Vive Villavo: agenda local, cultura, gastronomía, turismo y planes en Villavicencio.">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Vive Villavo | Descubre tu ciudad</title>
+<style>
+:root{--ink:#162824;--muted:#687872;--green:#173f36;--lime:#d5ed78;--paper:#f6f6f0;--card:#fff;--line:#e0e5dd;--orange:#d96b42}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:900px;margin:auto;padding:0 16px 92px}.top{background:var(--green);color:white;padding:22px 0 28px;border-radius:0 0 24px 24px}.top .wrap{padding-bottom:0}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-.5px;font-size:21px}.mark{width:38px;height:38px;border-radius:12px;background:var(--lime);color:var(--green);display:grid;place-items:center;font-weight:900;font-size:20px}.eyebrow{text-transform:uppercase;letter-spacing:1.7px;font-size:11px;color:#d5ed78;font-weight:800;margin-top:25px}.top h1{font-size:clamp(30px,7vw,48px);line-height:1.03;letter-spacing:-1.6px;margin:8px 0 10px;max-width:600px}.top p{margin:0;color:#dce8e1;max-width:560px}.search{display:flex;gap:8px;margin-top:20px}.search input{min-width:0;flex:1;padding:14px;border-radius:12px;border:1px solid #ffffff55;background:#fff;color:var(--ink)}.search button,.primary{border:0;border-radius:12px;padding:13px 16px;background:var(--lime);color:var(--green);font-weight:800}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:27px 0 12px}.sectionhead h2{font-size:21px;letter-spacing:-.5px;margin:0}.sectionhead small{color:var(--muted)}.chips{display:flex;gap:8px;overflow:auto;padding:2px 0 7px}.chip{white-space:nowrap;border:1px solid var(--line);background:white;border-radius:99px;padding:9px 13px;color:var(--ink)}.chip.active{background:var(--green);color:white;border-color:var(--green)}.notice{font-size:12px;background:#fff4d7;border:1px solid #f0dca6;border-radius:12px;padding:11px 13px;color:#66501d;margin-top:16px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.event{background:var(--card);border:1px solid var(--line);border-radius:17px;overflow:hidden;display:flex;flex-direction:column}.art{height:115px;padding:14px;display:flex;align-items:end;background:linear-gradient(135deg,#254e42,#76917b);color:white;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.art.culture{background:linear-gradient(135deg,#723e37,#e3a36e)}.art.food{background:linear-gradient(135deg,#855d24,#e5c46e)}.art.outdoor{background:linear-gradient(135deg,#245d68,#7dc0ad)}.eventbody{padding:13px;display:flex;flex-direction:column;gap:7px;flex:1}.status{font-size:10px;letter-spacing:.5px;text-transform:uppercase;font-weight:850;color:#8b5a17}.event h3{font-size:16px;line-height:1.2;margin:0}.event p{font-size:13px;color:var(--muted);margin:0}.event .meta{font-size:12px;color:var(--muted)}.empty{grid-column:1/-1;padding:24px;border:1px dashed #bdc8bf;border-radius:15px;color:var(--muted);text-align:center}.panel{display:none;background:white;border:1px solid var(--line);border-radius:18px;padding:17px;margin-top:15px}.panel.show{display:block}.panel h2{margin:0 0 7px;font-size:21px}.panel p{margin:0 0 14px;color:var(--muted);font-size:14px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px;background:#fff;color:var(--ink)}.field textarea{min-height:78px;resize:vertical}.footnote{font-size:11px;color:var(--muted);margin-top:10px}.bottom{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:5}.nav{max-width:900px;width:100%;display:flex;justify-content:space-around;padding:8px 5px calc(8px + env(safe-area-inset-bottom))}.nav button{border:0;background:none;color:var(--muted);font-size:11px;font-weight:700;padding:6px 10px;display:flex;flex-direction:column;align-items:center;gap:3px}.nav button span{font-size:20px}.nav button.active{color:var(--green)}.toast{position:fixed;left:16px;right:16px;bottom:85px;background:var(--green);color:white;padding:13px;border-radius:12px;display:none;z-index:9}.toast.show{display:block}.aboutbox{background:#e8eee6;padding:15px;border-radius:15px;font-size:14px;margin-top:16px}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.art{height:145px}.top{padding-top:28px}.wrap{padding-left:22px;padding-right:22px}}
+@media(max-width:390px){.grid{grid-template-columns:1fr}.art{height:100px}.search button{padding:12px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+</style>
+</head>
 <body>
+<header class="top"><div class="wrap">
+  <div class="brand"><div class="mark">V</div><div>VIVE VILLAVO</div></div>
+  <div class="eyebrow">Tu ciudad, más cerca</div>
+  <h1>¿Qué hacemos<br>hoy, Villavo?</h1>
+  <p>Encuentra planes, cultura, sabores y lugares para descubrir Villavicencio.</p>
+
+  <!-- BOTÓN DE GEOLOCALIZACIÓN -->
+  <button onclick="obtenerUbicacionGPS()" style="margin-top:10px; background:#102b27; color:#d5ed78; border:1px solid #d5ed78; padding:8px 12px; border-radius:8px; font-weight:bold;">📍 Usar mi ubicación actual</button>
+
+   <div class="search"><input id="search" placeholder="Busca un plan o lugar..." aria-label="Buscar"><button id="searchBtn">Buscar</button></div>
+</div></header>
+<main class="wrap">
+  <div class="notice"><strong>Versión inicial de prueba.</strong> Las tarjetas de ejemplo no son eventos reales ni están confirmadas. Esta versión todavía no consulta fuentes externas.</div>
+  <section id="home">
+    <div class="sectionhead"><h2>Explora por interés</h2><small>Villavicencio, Meta</small></div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-cat="Todos">Todo</button><button class="chip" data-cat="Música">Música</button><button class="chip" data-cat="Cultura">Cultura</button><button class="chip" data-cat="Gastronomía">Gastronomía</button><button class="chip" data-cat="Aire libre">Aire libre</button><button class="chip" data-cat="Familia">Familia</button>
+    </div>
+    <div class="sectionhead"><h2 id="listingTitle">Ideas para explorar</h2><small id="count">Ejemplos de interfaz</small></div>
+    <div class="grid" id="events"></div>
+    <div class="aboutbox"><strong>¿Organizas un evento o tienes un negocio?</strong><br>Propón tu actividad para que Vive Villavo pueda revisarla antes de publicarla.</div>
+  </section>
+  <section class="panel" id="submitPanel">
+    <h2>Propón una actividad</h2>
+    <p>Envía los datos básicos. En esta demo, la información se guarda solo en este navegador; todavía no se envía al equipo editorial.</p>
+    <form id="eventForm"><div class="formgrid">
+      <div class="field full"><label for="title">Nombre de la actividad *</label><input id="title" required maxlength="90" placeholder="Ej. Concierto, feria, taller..."></div>
+      <div class="field"><label for="category">Categoría *</label><select id="category" required><option value="">Elige una</option><option>Música</option><option>Cultura</option><option>Gastronomía</option><option>Aire libre</option><option>Familia</option><option>Otro</option></select></div>
+      <div class="field"><label for="date">Fecha *</label><input id="date" type="date" required></div>
+      <div class="field"><label for="place">Lugar o dirección *</label><input id="place" required maxlength="120" placeholder="Nombre y sector"></div>
+      <div class="field"><label for="price">Precio</label><input id="price" maxlength="60" placeholder="Gratis / valor / por confirmar"></div>
+      <div class="field full"><label for="source">Enlace público o fuente de información</label><input id="source" type="url" placeholder="https://..."></div>
+      <div class="field"><label for="organizer">Organizador o negocio *</label><input id="organizer" required maxlength="100"></div>
+      <div class="field"><label for="contact">Contacto público *</label><input id="contact" required maxlength="100" placeholder="Teléfono, correo o red"></div>
+      <div class="field full"><label for="details">Descripción / información adicional</label><textarea id="details" maxlength="500" placeholder="Horario, condiciones, edades..."></textarea></div>
+      <div class="field full"><button class="primary" type="submit">Guardar propuesta en este celular</button></div>// URL de tu API de SheetDB (La misma que usas para leer, sirve para escribir)
+    const API_URL = 'https://sheetdb.io/api/v1/TU_CODIGO_UNICO_AQUI';
+
+    // EVENTO DEL FORMULARIO: ENVÍO DIRECTO A GOOGLE SHEETS
+    $("eventForm").addEventListener("submit", async e => {
+        e.preventDefault();
+        
+        // 1. Capturamos los datos que escribió el usuario en el formulario
+        let nuevoEvento = {
+            title: $("title").value.trim(),
+            cat: $("category").value,
+            date: $("date").value,
+            place: $("place").value.trim(),
+            price: $("price").value.trim() || "Por confirmar",
+            status: "PENDIENTE", // Se registra como pendiente para tu revisión
+            art: "",
+            desc: $("details").value.trim() || "Propuesta enviada desde la aplicación."
+        };
+
+        toast("Enviando propuesta a la base de datos...");
+
+        try {
+            // 2. Enviamos los datos a Google Sheets mediante una petición POST
+            let respuesta = await fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    data: [nuevoEvento]
+                })
+            });
+
+            if (respuesta.ok) {
+                e.target.reset(); // Limpia el formulario
+                toast("¡Propuesta enviada con éxito a Google Sheets!");
+                
+                // Recargamos los datos para que aparezca en la app de inmediato si se aprueba
+                if(typeof cargarDatosDesdeGoogleSheets === 'function') {
+                    cargarDatosDesdeGoogleSheets();
+                }
+            } else {
+                toast("Hubo un error al enviar los datos. Inténtalo de nuevo.");
+            }
+
+        } catch (err) {
+            console.error("Error de red:", err);
+            toast("No se pudo conectar con el servidor de la base de datos.");
+        }
+    });
+    </div></form>
+    <div class="footnote">No incluyas datos personales que no quieras guardar en este dispositivo. Para recibir propuestas reales necesitaremos conectar un servicio de formularios o una base de datos.</div>
+    <div id="savedList"></div>
+  </section>
+  <section class="panel" id="placesPanel"><h2>Lugares</h2><p>El directorio se incorporará cuando empecemos a registrar y verificar establecimientos reales. No mostramos negocios inventados.</p><button class="primary" onclick="showPanel('submitPanel')">Proponer un negocio o actividad</button></section>
+  <section class="panel" id="aboutPanel"><h2>Sobre Vive Villavo</h2><p>Una guía local para conectar habitantes, visitantes, negocios, artistas y organizadores con lo que sucede en Villavicencio.</p><p><strong>Principio editorial:</strong> distinguir la información verificada de los anuncios pendientes, mostrar fuente y fecha de revisión, y corregir o retirar información cuando cambie.</p><p><strong>Estado:</strong> prototipo funcional local. No tiene cuentas, servidor, base de datos compartida ni conexiones automáticas.</p></section>
+</main>
+<div class="bottom"><nav class="nav" aria-label="Navegación"><button class="active" data-panel="home"><span>⌂</span>Inicio</button><button data-panel="placesPanel"><span>⌖</span>Lugares</button><button data-panel="submitPanel"><span>＋</span>Publicar</button><button data-panel="aboutPanel"><span>ⓘ</span>Proyecto</button></nav></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const demo = [
+ {title:"Ejemplo de evento musical",cat:"Música",date:"Fecha por verificar",place:"Villavicencio · lugar por confirmar",price:"Por confirmar",status:"EJEMPLO — NO CONFIRMADO",art:"",desc:"Tarjeta de muestra para visualizar cómo aparecerá una actividad real."},
+ {title:"Ejemplo de feria cultural",cat:"Cultura",date:"Fecha por verificar",place:"Villavicencio · lugar por confirmar",price:"Por confirmar",status:"EJEMPLO — NO CONFIRMADO",art:"culture",desc:"La publicación real requerirá una fuente o confirmación del organizador."},
+ {title:"Ejemplo de ruta gastronómica",cat:"Gastronomía",date:"Fecha por verificar",place:"Villavicencio · lugar por confirmar",price:"Por confirmar",status:"EJEMPLO — NO CONFIRMADO",art:"food",desc:"En esta sección se podrán descubrir experiencias gastronómicas locales."},
+ {title:"Ejemplo de actividad al aire libre",cat:"Aire libre",date:"Fecha por verificar",place:"Villavicencio · lugar por confirmar",price:"Por confirmar",status:"EJEMPLO — NO CONFIRMADO",art:"outdoor",desc:"No representa una actividad anunciada en la ciudad."}
+];
+let activeCat="Todos";
+const $=id=>document.getElementById(id);
+function render() {
+        const q = $("search").value.trim().toLowerCase();
+        
+        let items = eventosAPI.filter(e => 
+            (activeCat === "Todos" || e.cat === activeCat) && 
+            (!q || (e.title + " " + e.cat + " " + e.place).toLowerCase().includes(q))
+        );
+
+        $("events").innerHTML = items.length ? items.map(e => `
+            <article class="event">
+                <div class="art ${e.art || ''}">${e.cat}</div>
+                <div class="eventbody">
+                    <div class="status">${e.status}</div>
+                    <h3>${e.title}</h3>
+                    <p>${e.desc}</p>
+                    <div class="meta">◷ ${e.date}</div>
+                    <div class="meta">⌖ ${e.place}</div>
+                    <div class="meta">Precio: ${e.price}</div>
+                    
+                    <!-- BOTÓN PARA ABRIR GOOGLE MAPS / RUTA -->
+                    <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(e.place + ' Villavicencio')}" target="_blank" style="display:inline-block; margin-top:8px; background:#d5ed78; color:#102b27; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold; text-align:center;">🚗 ¿Cómo llegar?</a>
+                </div>
+            </article>
+        `).join('') : '<div class="empty">No encontramos resultados. Prueba otra palabra o categoría.</div>';
+        
+        $("count").textContent = items.length + " actividades en la ciudad";
+    }</article>`).join(""):'<div class="empty">No encontramos resultados. Prueba otra palabra o categoría.</div>';
+ $("count").textContent=items.length+" tarjetas de demostración";
+}
+function showPanel(id){
+ document.querySelectorAll("main section").forEach(s=>s.style.display="none");
+ if(id==="home"){$("home").style.display="block"}else{$(id).classList.add("show");$(id).style.display="block"}
+ document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.panel===id));
+ window.scrollTo({top:0,behavior:"smooth"});
+ if(id==="submitPanel")renderSaved();
+}
+document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>showPanel(b.dataset.panel)));
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{activeCat=b.dataset.cat;document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===b));render()}));
+$("searchBtn").addEventListener("click",render);$("search").addEventListener("input",render);
+function getSaved(){try{return JSON.parse(localStorage.getItem("vv_proposals")||"[]")}catch(e){return []}}
+function renderSaved(){let a=getSaved();$("savedList").innerHTML=a.length?'<hr><h3>Propuestas guardadas en este celular ('+a.length+')</h3>'+a.map((e,i)=>`<div style="padding:10px 0;border-bottom:1px solid var(--line)"><strong>${esc(e.title)}</strong><div class="footnote">${esc(e.category)} · ${esc(e.date)} · Pendiente de revisión local</div><button class="chip" onclick="deleteSaved(${i})">Eliminar</button></div>`).join(""):'<p class="footnote">Todavía no has guardado propuestas en este dispositivo.</p>'}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+window.deleteSaved=i=>{let a=getSaved();a.splice(i,1);localStorage.setItem("vv_proposals",JSON.stringify(a));renderSaved();toast("Propuesta eliminada de este celular.")};
+$("eventForm").addEventListener("submit",e=>{e.preventDefault();let item={title:$("title").value.trim(),category:$("category").value,date:$("date").value,place:$("place").value.trim(),price:$("price").value.trim()||"Por confirmar",source:$("source").value.trim(),organizer:$("organizer").value.trim(),contact:$("contact").value.trim(),details:$("details").value.trim(),created:new Date().toISOString()};let a=getSaved();a.push(item);try{localStorage.setItem("vv_proposals",JSON.stringify(a));e.target.reset();renderSaved();toast("Guardado en este navegador. Aún no se ha enviado ni publicado.");}catch(err){toast("No se pudo guardar. Revisa el espacio disponible en el navegador.");}});
+function toast(msg){$("toast").textContent=msg;$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),3500)}
+if("serviceWorker" in navigator && location.protocol.startsWith("http"))navigator.serviceWorker.register("./sw.js").catch(()=>{});
+render();
+</script>
+<script>
+    // PEGA AQUÍ LA URL QUE TE DIO SHEETDB
+    const API_URL = 'https://sheetdb.io/api/v1/TU_CODIGO_UNICO_AQUI';
+
+    let eventosAPI = []; 
+    const $ = id => document.getElementById(id);
+
+    // FUNCIÓN QUE DESCARGA LOS DATOS DE GOOGLE SHEETS EN TIEMPO REAL
+    async function cargarDatosDesdeGoogleSheets() {
+        try {
+            const respuesta = await fetch(API_URL);
+            eventosAPI = await respuesta.json();
+            renderizarEnLaPagina(); // Dibuja los datos en la pantalla
+        } catch (error) {
+            console.error("Error al conectar con la base de datos:", error);
+            $("events").innerHTML = '<div class="empty">No se pudo cargar la información en vivo.</div>';
+        }
+    }
+
+    // FUNCIÓN QUE CONVIERTE LOS DATOS DE LA HOJA EN TARJETAS VISIBLES
+    function renderizarEnLaPagina() {
+        let contenedor = $("events");
+        
+        if (eventosAPI.length === 0) {
+            contenedor.innerHTML = '<div class="empty">No hay eventos registrados todavía.</div>';
+            return;
+        }
+
+        // Dibuja cada fila de tu Google Sheets en forma de tarjeta bonita en la web
+        contenedor.innerHTML = eventosAPI.map(e => `
+            <article class="event">
+                <div class="art ${e.art || ''}">${e.cat || 'General'}</div>
+                <div class="eventbody">
+                    <div class="status">${e.status || 'VERIFICADO'}</div>
+                    <h3>${e.title}</h3>
+                    <p>${e.desc}</p>
+                    <div class="meta">◷ ${e.date}</div>
+                    <div class="meta">⌖ ${e.place}</div>
+                    <div class="meta">Precio: ${e.price}</div>
+                    
+                    <!-- Botón para abrir la ubicación en Google Maps -->
+                    <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(e.place + ' Villavicencio')}" target="_blank" style="display:inline-block; margin-top:8px; background:#d5ed78; color:#102b27; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">🚗 ¿Cómo llegar?</a>
+                </div>
+            </article>
+        `).join('');
+    }
+
+    // EJECUTAR LA CARGA DE DATOS AUTOMÁTICAMENTE AL ABRIR LA PÁGINA
+    cargarDatosDesdeGoogleSheets();
+</script>
+// Función para activar el GPS del celular
+    function obtenerUbicacionGPS() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    toast("¡Ubicación GPS detectada con éxito!");
+                    console.log("Latitud: " + lat, "Longitud: " + lon);
+                    // Aquí el sistema ya sabe dónde estás para futuras funciones de cercanía
+                },
+                (error) => {
+                    toast("No se pudo obtener la ubicación. Revisa los permisos del navegador.");
+                }
+            );
+        } else {
+            toast("Tu navegador no soporta geolocalización.");
+        }
+    }
+</body></html><div class="grid" id="events"></div>
 <header class="top"><div class="wra<!doctype html><!doctype html>
 <html lang="es">
 <head>
